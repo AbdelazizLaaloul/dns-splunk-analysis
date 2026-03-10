@@ -138,13 +138,6 @@ host=Abdelaziz sourcetype="dns_sample"
 ---
 
 
-##  References
-
-- [Splunk Documentation](https://docs.splunk.com)
-- [DNS Security Best Practices](https://www.cisa.gov/dns-security)
-- [MITRE ATT&CK - DNS](https://attack.mitre.org/techniques/T1071/004/)
-
----
 
 ##  Author
 
