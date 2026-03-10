@@ -1,11 +1,11 @@
-# 🔍 DNS Log Analysis Using Splunk SIEM
+#  DNS Log Analysis Using Splunk SIEM
 
 ![Splunk](https://img.shields.io/badge/Splunk-Enterprise-black?style=for-the-badge&logo=splunk&logoColor=green)
 ![Security](https://img.shields.io/badge/Security-SIEM-blue?style=for-the-badge&logo=shield&logoColor=white)
 ![DNS](https://img.shields.io/badge/DNS-Log%20Analysis-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-## 📌 Overview
+##  Overview
 
 This project demonstrates how to upload, parse, and analyze **DNS (Domain Name System) log files** using **Splunk Enterprise SIEM**. DNS logs are a critical data source in cybersecurity, providing visibility into network activity and helping detect threats such as:
 
@@ -16,7 +16,7 @@ This project demonstrates how to upload, parse, and analyze **DNS (Domain Name S
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 | Step | Description |
 |------|-------------|
@@ -26,8 +26,15 @@ This project demonstrates how to upload, parse, and analyze **DNS (Domain Name S
 | ![Most Queried](most_queried.png) | Most queried domain identified |
 
 ---
+Dataset
+FileFormatSizeEventsdns_2_log.gzGzip compressed log—422,130
 
-## 🛠️ Prerequisites
+File: dns_2_log.gz — real DNS traffic log used in this analysis
+Sourcetype: dns_sample
+Time Range: 3/10/26 3:19:00 PM → 3:20:00 PM
+Loaded into Splunk via: Settings → Add Data → Upload
+
+##  Prerequisites
 
 - Splunk Enterprise (installed and running)
 - DNS log sample file (`dns_sample` sourcetype)
@@ -35,7 +42,7 @@ This project demonstrates how to upload, parse, and analyze **DNS (Domain Name S
 
 ---
 
-## 🚀 Setup
+##  Setup
 
 ### 1. Upload DNS Log File to Splunk
 
@@ -54,7 +61,7 @@ index=* sourcetype="dns_sample"
 
 ---
 
-## 🔎 SPL Queries Used
+##  SPL Queries Used
 
 ### Basic Event Search
 ```spl
@@ -116,7 +123,7 @@ host=Abdelaziz sourcetype="dns_sample"
 
 ---
 
-## 🧠 Analysis Insights
+##  Analysis Insights
 
 - **`teredo.ipv6.microsoft.com`** dominates the traffic — this is Windows' IPv6 tunneling mechanism, normal in Windows environments but worth monitoring for volume anomalies.
 - High queries to **Norton** and **Symantec** domains suggest endpoint security software is active on the network.
@@ -125,26 +132,8 @@ host=Abdelaziz sourcetype="dns_sample"
 
 ---
 
-## 📁 Project Structure
 
-```
-dns-splunk-analysis/
-│
-├── README.md                  # Project documentation
-├── screenshots/               # Splunk UI screenshots
-│   ├── raw_events.png
-│   ├── domain_stats.png
-│   ├── top_domains.png
-│   └── most_queried.png
-├── queries/
-│   └── spl_queries.md         # All SPL queries used
-└── sample_data/
-    └── dns_sample.log         # Sample DNS log file (if shareable)
-```
-
----
-
-## 📚 References
+##  References
 
 - [Splunk Documentation](https://docs.splunk.com)
 - [DNS Security Best Practices](https://www.cisa.gov/dns-security)
@@ -152,13 +141,13 @@ dns-splunk-analysis/
 
 ---
 
-## 👤 Author
+##  Author
 
 **Abdelaziz**  
 Cybersecurity Analyst | Splunk SIEM  
 
 ---
 
-## 📄 License
+##  License
 
 This project is for educational purposes. Feel free to use and adapt.
