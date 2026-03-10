@@ -20,10 +20,10 @@ This project demonstrates how to upload, parse, and analyze **DNS (Domain Name S
 
 | Step | Description |
 |------|-------------|
-| ![Raw Events](screenshots/raw_events.png) | Raw DNS events view (422,130 events) |
-| ![Domain Stats](screenshots/domain_stats.png) | Domain frequency statistics |
-| ![Top Domains](screenshots/top_domains.png) | Top 10 most queried domains |
-| ![Most Queried](screenshots/most_queried.png) | Most queried domain identified |
+| ![Raw Events](raw_events.png) | Raw DNS events view (422,130 events) |
+| ![Domain Stats](domain_stats.png) | Domain frequency statistics |
+| ![Top Domains](top_domains.png) | Top 10 most queried domains |
+| ![Most Queried](most_queried.png) | Most queried domain identified |
 
 ---
 
